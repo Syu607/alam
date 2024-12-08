@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Leather Exports">
+    <meta name="keywords" content="Leather, Premium Leather, Export">
+    <title>ALAM INC.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+            
+        
+    <div class="topnav">
+    <img src="img/alam_logo-n.png" alt="Alam Inc. Logo" class="logo"/>
+    <div class="menu">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+
+
+    <!-- Header Section -->
+     <header id="home" class="header">
+        <div class="slider">
+            <div class="slide" style="background-image: url('img/slider2.jpeg');">
+                <div class="container">
+                    <h1>Crafting Excellence for Over 24 Years</h1>
+                    <p>Discover unparalleled leather craftsmanship, trusted by leading global brands. Proudly exporting premium leather to China, Germany, and Italy.</p>
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/slider3.jpeg');">
+                <div class="container">
+                    <h1>Sustainability with a GOLD Standard</h1>
+                    <p>Our Leather Working Group (LWG) GOLD rating reflects our dedication to environmentally responsible practices and superior quality.</p>
+                    <a href="#contact" class="btn-primary">Reach Us</a>
+                </div>
+            </div>
+			<div class="slide" style="background-image: url('img/slider2.jpeg');">
+                <div class="container">
+                    <h1>Premium Leather for Every Need</h1>
+                    <p>Supplying high-quality leather for Shoes, Apparels, and Gloves. Meeting REACH and EU standards to cater to the demands of international markets.</p>
+                    <a href="#contact" class="btn-primary">Send Us a Message</a>
+                </div>
+            </div>
+			<div class="slide" style="background-image: url('img/slider3.jpeg');">
+                <div class="container">
+                    <h1>Tradition Meets Innovation</h1>
+                    <p>Blending decades of experience with modern techniques to deliver durable, elegant, and precision-crafted leather.</p>
+                    <a href="#contact" class="btn-primary">Talk to Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        // JavaScript for Slider Control
+		document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".slider .slide");
+    let currentSlide = 0;
+
+    // Function to show the current slide
+    const showSlide = (index) => {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active"); // Hide all slides
+            if (i === index) {
+                slide.classList.add("active"); // Show the current slide
+            }
+        });
+    };
+
+    // Auto-slide functionality
+    const startAutoSlide = () => {
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length; // Move to the next slide
+            showSlide(currentSlide);
+        }, 5000); // Change slide every 5 seconds
+    };
+
+    // Initialize the slider
+    showSlide(currentSlide); // Show the first slide initially
+    startAutoSlide(); // Start auto sliding
+});
+
+       </script>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="about-content">
+            <!-- Image on Left Side -->
+            <div class="about-image">
+                <img src="img/about.png" alt="Leather Crafting" />
+            </div>
+
+            <!-- Description on Right Side -->
+            <div class="about-description">
+                <p style="font-family:Dancing Script;font-size:15pt; text-align:justify;">
+                    Based in Chennai, we are a family-run tannery 
+                    with over 24 years of expertise in crafting exceptional Goat, Sheep, and Cow leather in both Crust 
+                    and Finished forms. Renowned for our commitment to quality and sustainability, we proudly export to several 
+                    countries, with a strong focus on China, Germany, and Italy. Our GOLD rating from the Leather Working Group (LWG) 
+                    underscores our dedication to environmentally responsible practices and excellence in leather production.
+                    We collaborate with leading global brands to supply premium-grade leather for Shoes (Upper and Lining), Apparels, 
+                    and Gloves. Our products are celebrated for their superior quality, competitive pricing, and compliance with REACH and 
+                    EU standards, ensuring they meet the rigorous demands of international markets. Combining tradition with innovation, we 
+                    take pride in delivering leather that embodies durability, elegance, and precision, making us a trusted partner in the global leather industry.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p style="text-align:justify;">"ALAM INC is our go-to partner for premium leather. Their commitment to quality and timely delivery has been exceptional. The products meet all EU standards, making them a reliable choice for our shoe line."</p>
+                    <h4>- Schaaf Marco</h4>
+                </div>
+                <div class="testimonial">
+                    <p style="text-align:justify;">"The leather from ALAM INC is outstanding in quality and durability. As a designer, I appreciate their sustainable practices and REACH-compliant materials. A true industry leader!"</p>
+                    <h4>- Michalak Peter</h4>
+                </div>
+                <div class="testimonial">
+                    <p style="text-align:justify;">"ALAM INC provides the best crust and finished leather in the market. Their competitive pricing and superior customer service make them a trusted partner for our glove manufacturing business."</p>
+                    <h4>- Krebs Thorsten</h4>
+                </div>
+				<div class="testimonial">
+                    <p style="text-align:justify;">"Working with ALAM INC has been a pleasure. Their attention to detail and environmentally friendly approach align perfectly with our brand values. Highly recommended!"</p>
+                    <h4>- Wangler Anasthasia</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+			
+            <div class="contact-left">
+			<h3>ALAM INC.</h3>
+                <p>28, VV Koil St, Periamet, Park Town, Chennai, Tamil Nadu 600007</p>
+                <p><strong>Email:</strong> <a href="feroze.alam@gmail.com"></a></p>
+                <p><strong>Phone:</strong> <a href="tel:04425611757">044 25611757</a></p>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-google"></a>
+						<a href="#" class="fa fa-instagram"></a>
+					</div>
+                </div>
+                <div class="map">
+				<center><h3>Visit Our Office</h3></center>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.8046546743202!2d80.27046642629489!3d13.081764669328654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266075b01e4c3%3A0x36d648014dcd3fec!2s28%2C%20VV%20Koil%20St%2C%20Periamet%2C%20Park%20Town%2C%20Chennai%2C%20Tamil%20Nadu%20600007!5e0!3m2!1sen!2sin!4v1733656994528!5m2!1sen!2sin" 
+                        width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="contact-right">
+			<center><h3>Fill the Form</h3></center>
+                <form action="https://formspree.io/f/yusrasky@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            
+            <p>&copy; 2024 ALAM INC. All rights reserved.</p>
+        </div>
+        <a href="#home" class="scroll-to-top">&#x25B2;</a>
+    </footer>
+	<script>
+	// JavaScript to highlight the active menu link
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll(".topnav .menu a");
+    const sections = document.querySelectorAll("section, .section");
+
+    // Function to remove active class from all links
+    const removeActiveClass = () => {
+        links.forEach(link => {
+            link.classList.remove("active");
+        });
+    };
+
+    // Function to add active class to the clicked link
+    const setActiveClass = (index) => {
+        removeActiveClass();
+        links[index].classList.add("active");
+    };
+
+    // Observer options
+    const options = {
+        root: null, // viewport
+        rootMargin: "0px",
+        threshold: 0.3 // Section must be 50% visible to trigger
+    };
+
+    // Create IntersectionObserver instance
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Find the index of the section that is in view
+                const index = Array.from(sections).indexOf(entry.target);
+                setActiveClass(index);
+            }
+        });
+    }, options);
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+	</script>
+</body>
+</html>
